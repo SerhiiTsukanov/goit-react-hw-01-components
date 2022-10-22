@@ -10,32 +10,32 @@ import user from './user.json';
 //     <App />
 //   </React.StrictMode>
 // );
-function User(props) {
+function User({alt, username, tag, location, followers, views, likes}) {
   return (
     <div class="profile">
       <div class="description">
         <img
-          src={props.alt}
+          src={alt}
           alt="User avatar"
           class="avatar"
         />
-        <p class="name">{props.username}</p>
-        <p class="tag">{props.tag}</p>
-        <p class="location">{props.location}</p>
+        <p class="name">{username}</p>
+        <p class="tag">{tag}</p>
+        <p class="location">{location}</p>
       </div>
 
       <ul class="stats">
         <li>
           <span class="label">Followers</span>
-          <span class="quantity">{props.followers}</span>
+          <span class="quantity">{followers}</span>
         </li>
         <li>
           <span class="label">Views</span>
-          <span class="quantity">{props.views}</span>
+          <span class="quantity">{views}</span>
         </li>
         <li>
           <span class="label">Likes</span>
-          <span class="quantity">{props.likes}</span>
+          <span class="quantity">{likes}</span>
         </li>
       </ul>
     </div>
