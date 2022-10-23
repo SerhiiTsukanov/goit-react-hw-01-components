@@ -52,10 +52,17 @@ import App from './components/App';
 //   />,
 //   document.querySelector('#root'));
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+// ReactDOM.render(<App />, document.querySelector('#root'));
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
 //     <App />
 //   </React.StrictMode>
 // );
+
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root'),
+)
