@@ -9,17 +9,16 @@ export default function TransactionHistory({items}) {
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody key={items.id}>
+                {items.map(item => (
                 <tr>
-                <td>{items[0].type}</td>
-                <td>{items[0].amount}</td>
-                <td>{items[0].currency}</td>
+                <td>{item.type}</td>
+                <td>{item.amount}</td>
+                <td>{item.currency}</td>
                 </tr>
-                <tr>
-                <td>{items[1].type}</td>
-                <td>{items[1].amount}</td>
-                <td>{items[1].currency}</td>
-                </tr>
+                
+                ))}
+                
             </tbody>
         </table>
     );
