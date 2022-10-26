@@ -1,4 +1,6 @@
-export default function FriendListItem({friends}) {
+import css from '../FriendListItem/FriendListItem.css';
+
+export default function FriendListItem({ friends }) {
     return (
         <li class="item">
             {friends.map(friend => (
