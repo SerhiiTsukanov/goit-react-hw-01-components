@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import css from '../Profile/Profile.css';
+import css from './Profile/Profile.css';
 
 export default function User({ alt, username, tag, location, followers, views, likes }) {
   return (
