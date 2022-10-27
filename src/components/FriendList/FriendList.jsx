@@ -6,6 +6,7 @@ export default function FriendList({ friends }) {
     
     return (
         <ul className={css.friend_list}>
+            
             <FriendListItem
                 friends={friends}
                 
