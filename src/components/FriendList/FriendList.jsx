@@ -1,10 +1,11 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
 import css from '../FriendList/FriendList.css';
+import PropTypes from 'prop-types';
 
 export default function FriendList({ friends }) {
     
     return (
-        <ul class="friend-list">
+        <ul className={css.friend_list}>
             <FriendListItem
                 friends={friends}
                 
@@ -13,7 +14,9 @@ export default function FriendList({ friends }) {
     );
 }
 
-
+FriendList.propTypes = {
+    friends: PropTypes.array
+}
 
 
 

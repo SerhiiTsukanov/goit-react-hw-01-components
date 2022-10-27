@@ -7,11 +7,22 @@ import data from '../data.json';
 import friends from '../friends';
 import transactions from '../transactions';
 
-// console.log(data);
 
 export default function App() {
   return (
-    <div>
+    <div
+    style={{
+        marginRight: 'auto',
+        marginLeft: 'auto',
+        width: '600px',
+        height: '100vh',
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        color: '#010101',
+      }}>
       <Profile
         username={user.username}
         alt={user.avatar}
