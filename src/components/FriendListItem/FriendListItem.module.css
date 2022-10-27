@@ -29,13 +29,11 @@
         width: 20px;
         height: 20px;
     
-        color: ${({ eventOnline, theme })=> {
-            return eventOnline ? theme.colors.green: theme.colors.red;
-        }
-    }
-    
-    ;
-    border-radius: 50%;
+        /* color: ${({ eventOnline, theme })=> {
+                return eventOnline ? theme.colors.green: theme.colors.red;
+            }
+        }; */
+        border-radius: 50%;
 }
 
 .avatar {
