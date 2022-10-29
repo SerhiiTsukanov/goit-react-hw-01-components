@@ -31,7 +31,7 @@
         justify-content: left;
 }
 
-.status_on {
+.status {
     display: block;
         margin-right: 0;
         margin-right: 30px;
@@ -40,19 +40,31 @@
         width: 15px;
             height: 15px;
             border-radius: 50%;
-            background-color: green;
+            background-color: rgb(195, 236, 12);
 }
 
-.status_off {
+.false {
     display: block;
-    margin-right: 0;
-    margin-right: 30px;
-    margin-bottom: 35px;
-    align-content: flex-start;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: red;
+        margin-right: 0;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        align-content: flex-start;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+background-color: rgb(236, 12, 12);
+}
+
+.true {
+    display: block;
+        margin-right: 0;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        align-content: flex-start;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+background-color: rgb(12, 236, 23);
 }
 
 .avatar {
