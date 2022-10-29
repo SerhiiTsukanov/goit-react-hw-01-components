@@ -1,8 +1,10 @@
+
+
 .title {
     text-align: center;
     font-weight: 700;
     font-size: 25px;
-    color: #ffff;
+    color: #000000;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,20 +31,28 @@
         justify-content: left;
 }
 
-.status {
+.status_on {
     display: block;
         margin-right: 0;
         margin-right: 30px;
         margin-bottom: 35px;
         align-content: flex-start;
-        width: 20px;
-        height: 20px;
-    
-        /* color: ${({ eventOnline, theme })=> {
-                return eventOnline ? theme.colors.green: theme.colors.red;
-            }
-        }; */
-        border-radius: 50%;
+        width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: green;
+}
+
+.status_off {
+    display: block;
+    margin-right: 0;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    align-content: flex-start;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 .avatar {
