@@ -35,9 +35,10 @@ export const StatusFriends = styled.div`
   align-content: flex-start;
   width: 20px;
   height: 20px;
-  color: ${({ eventOnline, theme }) => {
-    return eventOnline ? theme.colors.green : theme.colors.red;
-  }};
+  background-color: ${props => {
+    return props.isOnline ? 'green' : 'red'
+  }
+ };
   border-radius: 50%;
 `;
 
