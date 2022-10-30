@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const FrList = styled.ul`
   margin-right: auto;
   margin-left: auto;
+  padding-left: 0;
 `;
 
 export const ItemFriends = styled.li`

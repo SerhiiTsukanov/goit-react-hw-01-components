@@ -1,35 +1,27 @@
-
 import PropTypes from 'prop-types';
 import {
-  FrList,
   ItemFriends,
   FriendsBox,
   StatusFriends,
   AvatarFriends,
   NameFriends,
-} from './FriendList.styled';
-
+} from '../FriendList/FriendList.styled';
 
 export default function FriendListItem({ friends }) {
     return (
-     <FrList>
-        {friends.map(friend => (
           
-        <ItemFriends key={friend.id}>
+        <ItemFriends key={friends.id}>
                 <FriendsBox>
-              <StatusFriends isOnline={friend.isOnline}>{friend.isOnline}</StatusFriends>
-              
-              
-                    <AvatarFriends src={friend.avatar} alt="User avatar" width="48" />
-                    <NameFriends>{friend.name}</NameFriends>  
+                <StatusFriends isOnline={friends.isOnline}>{friends.isOnline}</StatusFriends>
+                    <AvatarFriends src={friends.avatar} alt="User avatar" width="48" />
+                    <NameFriends>{friends.name}</NameFriends>  
                 </FriendsBox>
                
         </ItemFriends>
         )
-        )} 
-      </FrList>
-    );
-}
+        } 
+      
+   
 
 FriendListItem.propTypes = {
   items: PropTypes.arrayOf(
@@ -41,4 +33,3 @@ FriendListItem.propTypes = {
     })
   ),
 };
-
